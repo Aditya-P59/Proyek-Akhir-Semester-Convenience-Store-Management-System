@@ -1,14 +1,10 @@
-//no3
-
-//no1 dan 3
 struct node {
     char nama[50];
     struct node* left;
     struct node* right;
 };
 
-////////////no 2 dan 3
-struct node* newNode(char nama[50])//no 4,8
+struct node* newNode(char nama[50])
 {
     struct node* node = (struct node*)malloc(sizeof(struct node));
     strcpy(node->nama,nama);
@@ -17,7 +13,7 @@ struct node* newNode(char nama[50])//no 4,8
     return (node);
 }
 
-struct node* insert(struct node* node,char nama[50])//no 4,5,8
+struct node* insert(struct node* node,char nama[50])
 {
     /* If the tree is empty, return a new node */
     if (node == NULL)
@@ -30,7 +26,7 @@ struct node* insert(struct node* node,char nama[50])//no 4,5,8
     return node;
 }
 
-struct node* minValueNode(struct node* node)//no 5
+struct node* minValueNode(struct node* node)
 {
     struct node* current = node;
  
@@ -40,7 +36,7 @@ struct node* minValueNode(struct node* node)//no 5
     return current;
 }
 
-struct node* deleteNode(struct node* root,char nama[50])//no 4,5,9
+struct node* deleteNode(struct node* root,char nama[50])
 {
     if (root == NULL)
         return root;
@@ -67,7 +63,7 @@ struct node* deleteNode(struct node* root,char nama[50])//no 4,5,9
     return root;
 }
 
-struct node* updateNode(struct node* root,char nama[50],char nama_baru[50])//no 4,5
+struct node* updateNode(struct node* root,char nama[50],char nama_baru[50])
 {
     struct node* temp = deleteNode(root,nama);
     temp = insert(temp,nama_baru);
@@ -76,7 +72,7 @@ struct node* updateNode(struct node* root,char nama[50],char nama_baru[50])//no 
 
 
 
-void inorder(struct node* root)//node 9, 4,5
+void inorder(struct node* root)
 {
 
     if (root != NULL) {
@@ -85,7 +81,6 @@ void inorder(struct node* root)//node 9, 4,5
         inorder(root->right);
     }
 }
-/////////////////////////////
 
 struct node* data_barang = NULL;
 void menu(){
