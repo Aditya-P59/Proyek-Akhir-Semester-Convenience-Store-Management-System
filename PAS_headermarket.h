@@ -114,7 +114,14 @@ int informasiprogram()
 	printf("\n\tbagi pelaku bisnis toserba dengan sebuah program manajemen yang sistematis") ;
 	printf("\n\tsehingga toserba dapat bekerja dengan lebih efisien. Disini kami berencana") ;
 	printf("\n\takan mengimplementasikan materi rekursi, searching, bubbleshort, array, function,") ;
-	printf("\n\tserta dilengkapi dengan output program yang user friendly.\n\n") ;
+	printf("\n\tserta dilengkapi dengan output program yang user friendly.\n") ;
+	
+	printf("\n\tPada proyek akhir semester ini, kami memodifikasi program dengan") ;
+	printf("\n\tmengimplementasikan materi linked list serta binary tree dengan menambahkan");
+	printf("\n\tfitur baru, yaitu “Daftar karyawan hari ini”. Fitur tersebut berfungsi untuk"); 
+	printf("\n\tmencatat nama-nama karyawan yang bekerja pada hari tersebut dan juga terdapat dapat") ;
+	printf("\n\tbeberapa function yang berfungsi untuk menambahkan karyawan, mencetak daftar"); 
+	printf("\n\tkaryawan, mengedit daftar karyawan, sampai menghapus daftar karyawannya\n\n");
 	system("pause");
 	return main();
 }
